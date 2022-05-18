@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+</head>
+<body>
+    <div class="navbar navbar-expand-lg mt-2 " aria-orientation="vertical">
+      <div class="container-fluid">
+        <a href="#"><img src="images/logo.svg" alt="" class="navbar-brand ms-5"></a>
+        <a href="#" class="nav-link navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarToggle">
+          <img src="images/icon-menu.svg" alt="">
+        </a>
+
+        <div class="collapse navbar-collapse position-relative" id="navbarToggle">
+        <ul class="navbar-nav me-auto ">
+          <li class="nav-item dropdown ms-xxl-5">
+
+            <a href="#" class="nav-link text-hover" data-bs-toggle="dropdown">
+              Feature 
+              <span class="ms-1">
+                <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg"><path stroke="#686868" stroke-width="1.5" fill="none" d="m1 1 4 4 4-4"/></svg>
+              </span>
+            </a>
+              <ul class="dropdown-menu border border-light shadow">
+                <li><a href="#" class="dropdown-item text-menu" ><img src="images/icon-todo.svg" alt="" class="me-3">Todo List</a></li>
+                <li><a href="#" class="dropdown-item text-menu"><img src="images/icon-calendar.svg" alt="" class="me-3">Calendar</a></li>
+                <li><a href="#" class="dropdown-item text-menu"><img src="images/icon-reminders.svg" alt="" class="me-3">Reminers</a></li>
+                <li><a href="#" class="dropdown-item text-menu"><img src="images/icon-planning.svg" alt="" class="me-3">Planning</a></li>
+              </ul>
+          </li>
+
+
+          <li class="nav-item dropdown ms-3">
+              <a href="#" class="nav-link text-hover" data-bs-toggle="dropdown">Company
+                <span class="ms-1">
+                  <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg"><path stroke="#686868" stroke-width="1.5" fill="none" d="m1 1 4 4 4-4"/></svg>
+                </span>
+              </a>
+                <ul class="dropdown-menu border border-light shadow dropdown-menu-right">
+                  <li><a href="#" class="dropdown-item text-menu">History</a></li>
+                  <li><a href="#" class="dropdown-item text-menu">Our Team</a></li>
+                  <li><a href="#" class="dropdown-item text-menu">Blog</a></li>
+                </ul>
+          </li>
+
+
+          <li class="nav-item ms-3">
+            <a href="#" class="nav-link text-hover">Careers</a>
+          </li>
+
+
+          <li class="nav-item ms-3">
+            <a href="#" class="nav-link text-hover">About</a>
+          </li>
+        </ul>
+
+          <button class="btn text-menu border border-light navbar-nav position-absolute start-80">Login</button>
+          <button class="btn text-menu px-4 py-2 border-line navbar-nav position-absolute start-90">Register</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid d-flex mt-lg-5 box-content">
+        <div class="content  box position-relative">
+            <p class="header display-1">Make <span class="d-block">remote work</span></p>
+            <p class="w-75  text-content mt-5">Get your team in sync, no matter your location. Streamline processes, create team rituals,and<span class="d-block"> watch productivity soar.</span></p>
+            <button class="btn btn-content position-absolute bottom-10">Learn More</button>
+            <br>
+            <div class="img-box">
+              <img src="images/client-databiz.svg" alt="databiz" style="margin-right: 50px;">
+              <img src="images/client-audiophile.svg" alt="audiophile" style="margin-right: 50px;">
+              <img src="images/client-meet.svg" alt="meet" style="margin-right: 50px;">
+              <img src="images/client-maker.svg" alt="maker" style="margin-right: 50px;">
+            </div>
+        </div>
+        <div class="image-box">
+          <img src="images/image-hero-desktop.png" class="img-content ms-auto me-auto" alt="">
+        </div>
+    </div>
+</body>
+</html>
